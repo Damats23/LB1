@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LB1
+namespace LB1_2
 {
+    //-----------//
     abstract class Transport
     {
         public string Name_transpotr { get; set; }
@@ -47,8 +48,7 @@ namespace LB1
         }
         public override void Travel()
         {
-            Console.WriteLine("{0} едет со скоростью {1} км/ч c {2}" +
-                " занятыми местами ", Name_transpotr, Speed_transport, Size_people );
+            Console.WriteLine("{0} едет со скоростью {1} км/ч c {2}" + " занятыми местами ", Name_transpotr, Speed_transport, Size_people );
         }
     }
     class Exspress : Train
